@@ -1,0 +1,256 @@
+/*font-family: 'Noto Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Satisfy', cursive;
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+header {
+    background-color: rgb(55, 55, 120);
+    padding: 16px 0;
+}
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100; /*letra mas liviana*/
+    font-style: italic;
+    display: inline-block;/*para correlo a la derecha el titulo*/
+    position: relative;
+    bottom: 35px;/*sube 35 px relativamente*/
+    margin-left: 10px;
+}
+nav {
+    background-color:#6da9ed;
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0.5px;
+    display: flex;/*para que el menu de barra quede de forma lineal*/
+}
+nav ul li {
+    flex-grow: 1;/*para separar las palabras del menu*/
+}
+nav ul li a{
+    color:white;
+    text-decoration: none; /*sacamos el subrayado de la letra*/
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.1); /*opacidad al tocar el boton de menu*/
+}
+nav ul li a.activo{
+    background-color: #3978c0;
+}
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+.holder{ 
+    max-width: 960px;/*mi maximo ancho*/ 
+    margin: 0 auto;
+}
+h2{
+    color: #2e64a1;
+    font-weight: 400;/*te saca el negrita del subtitulo*/
+}
+/*inicio home*/
+.columnas{
+    display: flex;
+    justify-content: space-between;/*alinea los elementos del flex a lo largo del main*/
+}
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+.testimonios{
+    width: 25%;
+}
+.bienvenidos p{
+    font-size: 20px;
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    background-color: yellow ;
+    display: block;
+}
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    background-color: chocolate;
+    display: block;
+    margin: 12px;
+
+}
+/*fin home*/
+
+/*inicio nosostros*/
+.historia p{
+    font-size: 12px;
+}
+.persona{
+    width: 18%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box; 
+    margin: 1%; 
+}
+.personas{
+    display: flex;
+    justify-content: space-between;/*separa los contenidos uniformemente*/
+}
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.persona h5,
+.persona h6{
+    margin: 0;
+    font-weight: normal;
+    color: #2e64a1;
+}
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.persona h6{
+    font-style: italic;
+    font-size: 11px;
+}
+.persona p{
+    color: #666;
+    font-size: 10px;
+}
+
+/*fin nosotros*/
+
+/*inicio servicio*/
+
+.servicio{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px; /*separa la imagen del parrafo*/
+    align-items: center;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1; /*hace una LINEA debajo del texto*/
+    padding-bottom: 10px;
+}
+.servicio .info p{
+    font-size: 13px;
+}
+.servicio img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}    
+.servicio:nth-child(even){
+    flex-direction: row-reverse;/*hace la columna en reversa intercalado (impares de pares)*/
+}
+/*fin servicio*/
+
+/*inicio de galeria*/
+.galeria{
+    display: flex;
+    flex-wrap: wrap;/*sirve para controlar si el contenido es una sola linea o multilinea, si se llena 
+    lo pone abajo*/
+    justify-content: flex-start;/*START lo acomoda desde el principio-, CENTER- centra las imagenes
+    uniformemente,- BETWEN separa las imagenes uniformemente */
+}
+.galeria img{
+    width: 18%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+/*fin galeria*/
+
+/*inicio de contacto*/
+.contacto{
+    display: flex;
+    gap: 24px;/*separa lo del flex*/
+}
+.contacto div{
+    width: 100%;/*los div ocuparan el 100% del espacio ya limitado*/
+}
+.contacto p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p{
+    display: flex;
+}
+.formulario p label{
+    min-width: 80px;
+    /*background-color: orangered;*/
+}
+.formulario p input,
+.formulario p textarea{
+    width: 100%;
+    background-color: yellow;
+}
+.formulario p input,
+.formulario p textarea{
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+.formulario p label{
+    display: flex;
+    align-items: center;
+}
+.formulario p:nth-child(4){
+    align-items: start;
+}
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+/*fin de contacto*/

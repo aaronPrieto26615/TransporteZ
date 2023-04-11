@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes X</title>
+    <!--font de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;700&family=Satisfy&display=swap"
+        rel="stylesheet"><!--/-->
+    <link rel="stylesheet" href="/stylesheets/normalize.css"><!--se modifico-->
+    <link rel="stylesheet" href="/stylesheets/transportes.css"><!--se modifico-->
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/images/logo.png" alt="logo" width="100"><!--se modifico-->
+            <h1>Transportes X</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="holder">
+            <li><a class="{{#if isHome}}activo{{/if}}" href="/">Home</a></li><!--se modifico-->
+            <li><a class="{{#if isNosotros}}activo{{/if}}" href="/nosotros">Nosotros</a></li><!--se modifico-->
+            <li><a class="{{#if isServicios}}activo{{/if}}" href="/servicios">Servicios</a></li><!--se modifico-->
+            <li><a class="{{#if isGaleria}}activo{{/if}}" href="/galeria">Galeria</a></li><!--se modifico-->
+            <li><a class="{{#if isNovedades}}activo{{/if}}" href="/novedades">Novedades</a></li><!--se modifico-->
+            <li><a class="{{#if isContacto}}activo{{/if}}" href="/contacto">Contacto</a></li><!--se modifico-->
+        </ul>
+    </nav>
+   {{{body}}}
+    <footer>
+        <p>Diseñado por Aaron Prieto - &copy; 2023</p>
+    </footer>   
+  </body>
+</html>
